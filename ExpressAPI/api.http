@@ -1,0 +1,39 @@
+###PROBAR LA API CON LA EXTENSION DE VSCODE REST CLIENT
+
+
+### POST
+
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "Moby Dick",
+    "year": 1851,
+    "author": "Herman Mellville",
+    "genre": "Aventura",
+    "rating": 5.0
+}   
+
+
+### GET
+
+GET http://localhost:3000/books
+
+
+###PUT (REEMPLAZA EL ULTIMO PARAMETRO POR UNA ID DE ALGUN LIBRO, PUEDES RECOJERLA HACIENDO GET
+
+PUT http://localhost:3000/books/51gqRz51NOomAMz2eJJi
+Content-Type: application/json
+
+{
+    "title": "Moby Dick: A New Edition",
+    "year": 1852,
+    "rating": 3.5,
+    "genre": "Aventura",
+    "author": "Herman Mellville"
+
+}
+
+### DELETE (REEMPLAZA EL ULTIMO PARAMETRO POR UNA ID DE ALGUN LIBRO, PUEDES RECOJERLA HACIENDO GET
+
+DELETE http://localhost:3000/books/9faCpsPYKh1h20svKLgt
